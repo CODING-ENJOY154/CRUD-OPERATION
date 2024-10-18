@@ -1,0 +1,96 @@
+/* Addemployee.css */
+.container {
+  display: flex;
+  justify-content: center; /* Centers the card horizontally */
+  align-items: center; /* Centers the card vertically */
+  height: 100vh; /* Takes the full viewport height */
+  margin-top: 0; /* Removes any top margin */
+}
+
+.card {
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  padding: 40px; /* Padding for space inside the card */
+  width: 90%; /* Set width to 90% to maximize space */
+  max-width: 1200px; /* Adjust max-width for better responsiveness */
+  margin: 0 auto; /* Center the card */
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 5px; /* Keep input corners rounded but not too extreme */
+  padding: 15px; /* Padding for input fields */
+  margin-bottom: 20px; /* Space between fields */
+  font-size: 16px; /* Font size for readability */
+  height: 50px; /* Maintain height for input fields */
+}
+
+.btn {
+  width: 150px; /* Maintain button width */
+  height: 50px; /* Consistent button height */
+  margin-right: 10px; /* Space between buttons */
+  font-size: 16px; /* Button font size */
+}
+
+.text-center {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px; /* Font size for the title */
+}
+
+.btn-success {
+  background-color: pink;
+  border: none; /* No border */
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none; /* No border */
+}
+
+.btn:hover {
+  opacity: 0.9; /* Slight hover effect */
+}
+
+/* Media query for smaller screens like Redmi A2 */
+@media only screen and (max-width: 720px) {
+  .container {
+    height: auto; /* Allow content to adjust height */
+    padding: 20px; /* Add padding around the container */
+  }
+
+  .card {
+    width: 100%; /* Full width for smaller screens */
+    padding: 20px; /* Less padding for smaller devices */
+    box-shadow: none; /* Remove shadow to simplify the design */
+  }
+
+  .form-control {
+    font-size: 14px; /* Smaller font size for input fields */
+    padding: 10px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow input fields to adjust height */
+  }
+
+  .btn {
+    width: 100%; /* Full width buttons on small screens */
+    margin-bottom: 10px; /* Add space between buttons vertically */
+    font-size: 14px; /* Adjust button font size for smaller screens */
+  }
+
+  .text-center {
+    font-size: 20px; /* Adjust font size for titles */
+    margin-bottom: 15px; /* Adjust spacing for smaller screens */
+  }
+
+  .btn-success {
+    width: 100%; /* Full-width button for success */
+  }
+
+  .btn-danger {
+    width: 100%; /* Full-width button for danger */
+    margin-top: 10px; /* Add margin between buttons */
+  }
+}
